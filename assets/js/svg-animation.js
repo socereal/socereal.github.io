@@ -27,4 +27,22 @@ $(document).ready(function () {
     rotateSun();
     setInterval(rotateSun, duration);
   }
+
+  var cloud = Snap("#cloud");
+  if (cloud) {
+    let duration = 10000;
+    let bounds = cloud.getBBox();
+    var rotateCloud = function () {
+      Snap.animate(0, 20, function (val) {
+        cloud.transform("r" + [val, 150, 300] + "s" + ((val / 20.0)*0.3 + 1));
+      }, duration/2);
+      setTimeout(function(){
+        Snap.animate(20, 0, function (val) {
+          cloud.transform("r" + [val, 150, 300] + "s" + ((val / 20.0)*0.3 + 1));
+        }, duration/2);
+      },duration/2);
+    };
+    rotateCloud();
+    setInterval(rotateCloud, duration);
+  }
 });
