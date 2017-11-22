@@ -3,7 +3,7 @@
  */
 body {
   height:100%;
-} 
+}
 
 header, section {
   width: 100%;
@@ -71,7 +71,7 @@ section {
     position: relative;
     left: 50%;
     margin-left: -75px;
-}
+  }
 
 }
 
@@ -84,12 +84,12 @@ section {
   height: auto;
   #sky {
     position: absolute;
-	max-height: 150px;
+    max-height: 150px;
   }
   .wrapper {
     position: relative;
-	background: url(../images/cloud.png) 15% bottom no-repeat;
-	background-size: 100px 73px;
+    background: url(../images/cloud.png) 15% bottom no-repeat;
+    background-size: 100px 73px;
     padding: 0;
     .content {
       position: relative;
@@ -140,7 +140,7 @@ section {
 /**
  * 404
  */
- 
+
 .error-content {
   background-color: $blue;
   padding: 2em;
