@@ -21,7 +21,7 @@ $(document).ready(function () {
     let duration = 8000;
     var rotateSun = function () {
       Snap.animate(0, 360, function (val) {
-        sun.transform("r" + [val, 1600, 230]);
+        sun.transform("r" + [val, 1500, 230]);
       }, duration);
     };
     rotateSun();
